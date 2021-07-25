@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="168px" height="55px" viewBox="0 0 168 55" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
+    <title>logo</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="logo" transform="translate(-6.000000, -10.000000)">
+            <text id="LIFESTYLE" font-family="Times-Roman, Times" font-size="32" font-weight="normal" fill="#000000">
+                <tspan x="7" y="64">LIFESTYLE</tspan>
+            </text>
+            <text id="PREMIUM" font-family="Times-Roman, Times" font-size="34" font-weight="normal" letter-spacing="1.4875" fill="#AF1414">
+                <tspan x="6" y="33">PREMIUM</tspan>
+            </text>
+            <rect id="Rectangle" x="0" y="0" width="181" height="72"></rect>
+        </g>
+    </g>
+</svg>

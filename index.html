@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Premium Lifestyle</title>
+    <meta charset="UTF-8">
+    <meta content="This is the website for Premium Lifestyle magazine, including information and upcoming events" name="description">
+    <meta content="UOL, Computer Science, Line Evjenth" name="author">
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <meta content="Premium Lifestyle, Magazine, Newsletter, Social Club, Javascript, HTML, CSS, Project" name="keywords">
+    
+    <link href="style.css" rel="stylesheet">
+    
+    <!--    Roboto font-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    
+    <!--    Hamburger icon-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet">
+    
+    <!--Social media icons-->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    <!--arrows slideshow-->
+    <script src="https://use.fontawesome.com/1744f3f671.js"></script>
+
+
+</head>
+
+<body>
+    <!--Responsive navigation bar with hamburger menu. Code adapted from: https://www.codingnepalweb.com/2020/04/responsive-menu-bar-in-html-css.html-->
+    <header>
+        <nav>
+            <!--Hamburger icon-->
+            <input id="check" type="checkbox">
+            <label class="checkbtn" for="check"><i class="fas fa-bars"></i></label>
+            <!--Logo image in top left corner-->
+            <a href="index.html">
+             <img alt="Premium Lifestyle Logo" class="logo" src="Images/Index/logo%20premium.svg"></a>
+             <!--navigation menu/"buttons" on left side-->
+            <ul>
+                <li>
+                    <a class="active-btn" href="articles.html">Articles</a>
+                </li>
+                <li>
+                    <a class="active-btn" href="about.html">About</a>
+                </li>
+                <li>
+                    <a class="active-btn" href="report.html">Report</a>
+                </li>
+                <li>
+                    <a class="subscribe" href="subscribe.html">Subscribe</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--NAVBAR END-->
+    
+<!--    INDEX PAGE START-->
+    <!--Hero image. Code adapted from: https://www.developerdrive.com/full-page-hero-image-html-css/ -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Premium Lifestyle</h1>
+            <h2 class="hero-subtitle">The number one lifestyle magazine in the UK</h2><button class="hero-button" onclick="location.href='subscribe.html'" type="button">Join our Newsletter &raquo;</button>
+        </div>
+    </section>
+    <!--    HERO IMAGE END-->
+    
+    <!--    Most read section START-->
+    <h2 class="most-read-text">Most read</h2>
+    
+    <!-- Responsive columns for "most read" articles: Code adapted from: https://codepen.io/una/pen/WNQdBza and card with shadow effect https://www.w3schools.com/howto/howto_css_cards.asp-->
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <a href="#"><img alt="Woman looking at contemporary art" class="most-read" src="Images/Index/art.jpg">
+                <div class="card-container">
+                    <h3>ART</h3>
+                    <p>Galleries for the beginner art collector</p>
+                </div></a>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <a href="#"><img alt="Green, tasty macarons" class="most-read" src="Images/Index/macarons.jpg">
+                <div class="card-container">
+                    <h3>FOOD</h3>
+                    <p>Recipe: Matcha macarons</p>
+                </div></a>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <a href="#"><img alt="Bathroom with pastel colored tiles and gold details" class="most-read" src="Images/Index/bathroom.jpg">
+                <div class="card-container">
+                    <h3>INTERIOR</h3>
+                    <p>Design ideas for stylish bathrooms</p>
+                </div></a>
+            </div>
+        </div>
+    </div>
+    <!--    MOST READ CARDS END-->
+    
+    <!--    Carousel of quotes START-->
+    <!--    Code adapted from: https://www.w3schools.com/howto/howto_js_slideshow.asp-->
+    <!-- Slideshow container -->
+    <div class="slideshow-container-in">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides-in fade"><img alt="Quote: Premiun Lifestyle always give me the best insigths on what is happening in London, I've even met new friends at their events, by Annie Bright." src="Images/Index/quote1.svg" style="width:100%"></div>
+        
+        <div class="mySlides-in fade"><img alt="Quote: Absolutely love the articles and I'm always looking forward to the weekly newsletter, by Sarah Pam" src="Images/Index/quote3.svg" style="width:100%"></div>
+        
+        <div class="mySlides-in fade"><img alt="Quote: My favourite magazine!, by Kate Moon" src="Images/Index/quote2.svg" style="width:100%"></div>
+        <!-- Next and previous buttons -->
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot-in" onclick="currentSlide(1)"></span> <span class="dot-in" onclick="currentSlide(2)"></span> <span class="dot-in" onclick="currentSlide(3)"></span>
+        </div>
+    </div><br>
+    <!--    Carousel of quotes END-->
+    
+    
+      <!--    FOOTER START-->
+        <!--  Code adapted from: https://blog.eduonix.com/web-programming-tutorials/build-responsive-website-footer-using-html-css/-->
+        <footer class="footer-big">
+        <!--  left side (logo + links)-->
+            <div class="footer-left">
+                <a href="index.html">
+                 <img alt="Premium Lifestyle Logo" src="Images/Index/logo%20premium.svg"></a>
+                <p class="footer-links"><a href="about.html">About</a> | 
+                <a href="subscribe.html">Subscribe</a></p>
+                <p class="footer-company-name">Premium Lifestyle Magazine London UK</p>
+            </div>
+        <!--            contact info-->
+            <div class="footer-center">
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>18 South Kensington Street</span> SW1 4KW London</p>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="mailto:info@pl.co.uk">info@pl.co.uk</a></p>
+                </div>
+            </div>
+            <!--            social media icons-->
+            <div class="footer-right">
+                <p class="footer-company-about">The number one lifestyle magazine in the UK. Get your fashion inspiration, lifetstyle tips and homestyling advice and so much more from leading experts.</p>
+                <div class="footer-icons">
+                    <a href="https://facebook.com" title="Facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="https://twitter.com" title="Twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="https://instagram.com" title="Instagram"><i class="fa fa-instagram"></i></a>
+                    <a href="https://linkedin.com" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://youtube.com" title="Youtube"><i class="fa fa-youtube"></i></a>
+                </div>
+            </div>
+        </footer>
+        <!--    FOOTER END-->
+    <script src="script-index.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Premium Lifestyle</title>
+    <meta charset="UTF-8">
+    <meta content="This is the website for Premium Lifestyle magazine, including information and upcoming events" name="description">
+    <meta content="UOL, Computer Science, Line Evjenth" name="author">
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <meta content="Premium Lifestyle, Magazine, Newsletter, Social Club, Javascript, HTML, CSS, Project" name="keywords">
+    
+    <link href="style.css" rel="stylesheet">
+    
+    <!--    Roboto font-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    
+    <!--    Hamburger icon-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet">
+    
+    <!--Social media icons-->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    <!--arrows slideshow-->
+    <script src="https://use.fontawesome.com/1744f3f671.js"></script>
+</head>
+
+<body>
+<!--   NAV BAR START-->
+    <!--Responsive navigation bar with hamburger menu. Code adapted from: https://www.codingnepalweb.com/2020/04/responsive-menu-bar-in-html-css.html-->
+      <header>
+        <nav>
+            <!--Hamburger icon-->
+            <input id="check" type="checkbox">
+            <label class="checkbtn" for="check"><i class="fas fa-bars"></i></label>
+            <a href="index.html">
+            <!--Logo image in top left corner-->
+             <img alt="Premium Lifestyle Logo" class="logo" src="Images/Index/logo%20premium.svg"></a>
+             <!--navigation menu/"buttons" on left side-->
+            <ul>
+                <li>
+                    <a class="active-btn" href="articles.html">Articles</a>
+                </li>
+                <li>
+                    <a class="active-btn" href="about.html">About</a>
+                </li>
+                <li>
+                    <a class="active-btn" href="report.html">Report</a>
+                </li>
+                <li>
+                    <a class="subscribe" href="subscribe.html">Subscribe</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--NAVBAR END-->
+    
+    <div class="background-color">
+        <!--       breadcrumbs-->
+        <ul class="breadcrumb">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>About</li>
+        </ul>
+        <!--   image + text section start-->
+        <!--  Paragraph text inspired by https://fashionmagazine.com/about-us/-->
+        <!-- Help with responsive flexboxes from: https://www.w3schools.com/css/css3_flexbox_responsive.asp-->
+        <div class="flex-container-section">
+            <div class="flex-item-left">
+                <h1>About us</h1>
+                <p>We are Premium Lifestyle - your go to online magazine for the best tips and tricks to elevate your life. We aim to inspire, empower and educate you to be your best self.</p>
+                <h4>Thank you for reading!</h4>
+            </div>
+            <div class="flex-item-right"><img alt="Two happy female employees working infront of a laptop" class="responsive-img" src="Images/About/work.jpg"></div>
+        </div>
+        <!--   image + text section end-->
+        
+        <!--Three flex boxes start (text - image - text) -->
+        <!--         Help with responsive flexboxes from: https://www.w3schools.com/css/css3_flexbox_responsive.asp.-->
+        <div class="flex-container-about">
+            <div class="flex-one">
+                <h2>Empower</h2>
+                <p>PL Magazine wants to inspire women to choose innovation and growth, get out of the comfort zone, follow your dreams and get that job!</p>
+            </div>
+            <div class="flex-two"><img alt="Female employees working together in our office" class="responsive-img" src="Images/About/workgroup.jpg"></div>
+            <div class="flex-three">
+                <h2>Creativity</h2>
+                <p>We believe in constantly reinventing ourself. We are always looking out for the most eye-cathing looks and latest trends through the perespective of ambitioius and fearless women</p>
+            </div>
+        </div>
+    <!--        Flex boxes end-->
+        
+         <div class="slideshow-header">
+            <h2>Have a look at our new offices and the team in action below</h2>
+        </div>
+        <!--Slideshow start-->
+        <!--Slideshow adjusted from https://www.w3schools.com/howto/howto_js_slideshow.asp to fit the page-->
+        <div class="slideshow-container">
+            <!--5 images-->
+            <div class="mySlides fade"><img alt="Our beautiful London office. Light and airy with plants" src="Images/About/office.jpg" style="width:100%"></div>
+            <div class="mySlides fade"><img alt="Reading the magazine with a cup of tea" src="Images/About/reading.jpg" style="width:100%"></div>
+            <div class="mySlides fade"><img alt="Magazine example with accessories" src="Images/About/reading2.jpg" style="width:100%"></div>
+            <div class="mySlides fade"><img alt="Two of our lovely colleagues working on a section" src="Images/About/work-standing.jpg" style="width:100%"></div>
+            <div class="mySlides fade"><img alt="The team is working on the next issue" src="Images/About/workgroup.jpg" style="width:100%"></div>
+            <!--left and right arrows-->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <!--dots/ indications-->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> <span class="dot" onclick="currentSlide(2)"></span> <span class="dot" onclick="currentSlide(3)"></span> <span class="dot" onclick="currentSlide(4)"></span> <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+        <!--Slideshow end-->
+        
+        <!--image-->
+        <img alt="Magazine issue " class="responsive-img" height="400" src="Images/About/about.jpg" width="600">
+        
+        <!--    FOOTER START-->
+        <!--  Code adapted from: https://blog.eduonix.com/web-programming-tutorials/build-responsive-website-footer-using-html-css/-->
+        <footer class="footer-big">
+        <!--  left side (logo + links)-->
+            <div class="footer-left">
+                <a href="index.html">
+                 <img alt="Premium Lifestyle Logo" src="Images/logo%20premium.svg"></a>
+                <p class="footer-links"><a href="about.html">About</a> | 
+                <a href="subscribe.html">Subscribe</a></p>
+                <p class="footer-company-name">Premium Lifestyle Magazine London UK</p>
+            </div>
+        <!--            contact info-->
+            <div class="footer-center">
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>18 South Kensington Street</span> SW1 4KW London</p>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="mailto:info@pl.co.uk">info@pl.co.uk</a></p>
+                </div>
+            </div>
+            <!--            social media icons-->
+            <div class="footer-right">
+                <p class="footer-company-about">The number one lifestyle magazine in the UK. Get your fashion inspiration, lifetstyle tips and homestyling advice and so much more from leading experts.</p>
+                <div class="footer-icons">
+                    <a href="https://facebook.com" title="Facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="https://twitter.com" title="Twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="https://instagram.com" title="Instagram"><i class="fa fa-instagram"></i></a>
+                    <a href="https://linkedin.com" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://youtube.com" title="Youtube"><i class="fa fa-youtube"></i></a>
+                </div>
+            </div>
+        </footer>
+        <!--    FOOTER END-->
+    </div>
+    <script src="script.js">
+    </script>
+</body>
+</html>

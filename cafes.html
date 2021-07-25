@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Premium Lifestyle</title>
+    <meta charset="UTF-8">
+    <meta content="This is the website for Premium Lifestyle magazine, including information and upcoming events" name="description">
+    <meta content="UOL, Computer Science, Line Evjenth" name="author">
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <meta content="Premium Lifestyle, Magazine, Newsletter, Social Club, Javascript, HTML, CSS, Project" name="keywords">
+    
+    <link href="style.css" rel="stylesheet">
+    
+    <!--    Roboto font-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    
+    <!--    Hamburger icon-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet">
+    
+    <!--Social media icons-->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--Responsive navigation bar with hamburger menu. Code adapted from: https://www.codingnepalweb.com/2020/04/responsive-menu-bar-in-html-css.html-->
+    <header>
+        <nav>
+            <!--Hamburger icon-->
+            <input id="check" type="checkbox">
+            <label class="checkbtn" for="check"><i class="fas fa-bars"></i></label>
+            <a href="index.html">
+            <!--Logo image in top left corner-->
+             <img alt="Premium Lifestyle Logo" class="logo" src="Images/Index/logo%20premium.svg"></a>
+             <!--navigation menu/"buttons" on left side-->
+            <ul>
+                <li>
+                    <a class="active-btn" href="articles.html">Articles</a>
+                </li>
+                <li>
+                    <a class="active-btn" href="about.html">About</a>
+                </li>
+                <li>
+                    <a class="active-btn" href="report.html">Report</a>
+                </li>
+                <li>
+                    <a class="subscribe" href="subscribe.html">Subscribe</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--NAVBAR END-->
+      
+       <div class="background-color">
+        <!--Breadcrumbs -->
+        <ul class="breadcrumb">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="articles.html">Articles</a>
+            </li>
+            <li>London's Most Instagrammable Cafés</li>
+        </ul>
+         <!--Headings -->
+        <h1 class="headline">London's Most Instagrammable Cafés</h1>
+        <h3 class="sub-head">FOOD</h3>
+        <p class="sub-head" style="font-size: 12px;">by THE PREMIUM LIFESTYLE Team, <span class="italic">23 February 2021</span></p>
+         <!--Large image -->
+        <img alt="Person taking a photo of two instagrammable cups of coffee" class="img-article-large" src="Images/Cafe/instagram.jpg" style="width: 100%">
+        
+        
+        <!--      Image grid start-->
+        <!--       Responsive image grid adapted from: https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp. I added alternative text to images and a text column -->
+         <!--Balifornia -->
+        <div class="image-row">
+            <div class="image-column"><img alt="dining table" src="Images/Cafe/Balifornia/bali1.jpg" style="width:100%">
+            <img alt="toast with berries" src="Images/Cafe/Balifornia/bali2.jpg" style="width:100%"></div>
+            
+            <div class="image-column"><img alt="vegan dish with lots og vegetables and pommegranade" src="Images/Cafe/Balifornia/bali3.jpg" style="width:100%">
+            <img alt="interior shot of bench and plants" src="Images/Cafe/Balifornia/bali4.jpg" style="width:100%"></div>
+            
+            <div class="text-column-right">
+                <h3>Balifornia</h3>
+                <p>Organic, vegan, healthy(-ish?). The myth that vegan food is boring is long gone. Balifornia has the most stunning decor and makes us wonder if we’re still in London or somehow got magically teleported to a beach club in Bali. We recommend going on a sunny day, to get the perfect lighting for your Instagram shot.</p>
+            </div>
+        </div>
+        <hr>
+        
+         <!--Cupcake Factory -->
+        <div class="image-row">
+            <div class="text-column-left">
+                <h3>The Cupcake Factory</h3>
+                <p>You can smell the aim of cupcakes as you are getting closer to Rose Street. The Cupcake Factory's flower cupcakes are a work of art and will guarantee you plenty of likes on your IG post. Can't decide on one cupcake? Take two, or three, and bring some home! The cupcakes are perfect for birthdays, weddings, and parties too.</p>
+            </div>
+            <div class="image-column">
+            <img alt="cupcakes with flower decoration" src="Images/Cafe/CupcakeFactory/cupcake3.jpg" style="width:100%">
+            <img alt="hazelnut chocolate cupcake" src="Images/Cafe/CupcakeFactory/cupcake2.jpg" style="width:100%"></div>
+            
+            <div class="image-column">
+            <img alt="cupcakes with cherries on top" src="Images/Cafe/CupcakeFactory/cupcake1.jpg" style="width:100%">
+            <img alt="cupcake display" src="Images/Cafe/CupcakeFactory/cupcake4.jpg" style="width:100%"></div>
+        </div>
+        <hr>
+        
+         <!--Pinkposh -->
+        <div class="image-row">
+            <div class="image-column">
+            <img alt="pink coffee" src="Images/Cafe/Pinkposh/pink1.jpg" style="width:100%">
+            <img alt="friends dining at Pinkposh" src="Images/Cafe/Pinkposh/pink2.jpg" style="width:100%"></div>
+            
+            <div class="image-column-2">
+            <img alt="The very pink pinkposh entrance" src="Images/Cafe/Pinkposh/pink3.jpg" style="width:100%">
+            <img alt="pink indoor interior" src="Images/Cafe/Pinkposh/pink4.jpg" style="width:100%"></div>
+            
+            <div class="text-column-right">
+                <h3>Pinkposh</h3>
+                <p>Ah, Pinkposh. The Insta favorite doesn't require an introduction. Search for London on Instagram, and you'll find Pinkposh. What color do you want your latte - blue, pink, or green? With their pink interior, your feed will look like the one of a top influencer.</p>
+            </div>
+        </div>
+        <hr>
+        
+         <!--Chelsea cafe -->
+        <div class="image-row">
+            <div class="text-column-left">
+                <h3>Chelsea Café</h3>
+                <p>Tea anyone? The classic Chelsea Café is always a safe bet, with its lovely staff and delicious British food. They are known for their afternoon tea and champagne. The place is perfect for people-watching, and getting a short glimpse into the life of the Chelsea locals.</p>
+            </div>
+            <div class="image-column-3">
+            <img alt="afternoon tea" src="Images/Cafe/Chelsea/chelsea4.jpg" style="width:100%">
+            <img alt="sweet pastries" src="Images/Cafe/Chelsea/chelsea2.jpg" style="width:100%"></div>
+            
+            <div class="image-column">
+            <img alt="women getting served by the waitress" src="Images/Cafe/Chelsea/chelsea3.jpg" style="width:100%">
+            <img alt="egg on toast" src="Images/Cafe/Chelsea/chelsea1.jpg" style="width:100%"></div>
+        </div>
+        <hr>
+        
+         <!--Sketch -->
+        <div class="image-row">
+            <div class="image-column">
+            <img alt="the pink dining room" src="Images/Cafe/Sketch/sketch1.jpg" style="width:100%"></div>
+            <div class="image-column-2">
+            <img alt="details of the pink interior" src="Images/Cafe/Sketch/sketch2.jpg" style="width:100%"></div>
+            
+            <div class="text-column-right">
+                <h3>Sketch</h3>
+                <p>Sketch. The one and only. The legendary. As famous for their pink interior, as for their Michellin food. Oh, and don’t forget to take a photo when you visit their eggshaped bathrooms.</p>
+            </div>
+        </div>
+        <!--   Image grid end-->
+    </div>
+      <!--    FOOTER START-->
+        <!--  Code adapted from: https://blog.eduonix.com/web-programming-tutorials/build-responsive-website-footer-using-html-css/-->
+        <footer class="footer-big">
+        <!--  left side (logo + links)-->
+            <div class="footer-left">
+                <a href="index.html">
+                 <img alt="Premium Lifestyle Logo" src="Images/Index/logo%20premium.svg"></a>
+                <p class="footer-links"><a href="about.html">About</a> | 
+                <a href="subscribe.html">Subscribe</a></p>
+                <p class="footer-company-name">Premium Lifestyle Magazine London UK</p>
+            </div>
+        <!--            contact info-->
+            <div class="footer-center">
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>18 South Kensington Street</span> SW1 4KW London</p>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="mailto:info@pl.co.uk">info@pl.co.uk</a></p>
+                </div>
+            </div>
+            <!--            social media icons-->
+            <div class="footer-right">
+                <p class="footer-company-about">The number one lifestyle magazine in the UK. Get your fashion inspiration, lifetstyle tips and homestyling advice and so much more from leading experts.</p>
+                <div class="footer-icons">
+                    <a href="https://facebook.com" title="Facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="https://twitter.com" title="Twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="https://instagram.com" title="Instagram"><i class="fa fa-instagram"></i></a>
+                    <a href="https://linkedin.com" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://youtube.com" title="Youtube"><i class="fa fa-youtube"></i></a>
+                </div>
+            </div>
+        </footer>
+        <!--    FOOTER END-->
+    <script src="script.js"></script>
+</body>
+</html>

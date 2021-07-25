@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Premium Lifestyle</title>
+    <meta charset="UTF-8">
+    <meta content="This is the website for Premium Lifestyle magazine, including information and upcoming events" name="description">
+    <meta content="UOL, Computer Science, Line Evjenth" name="author">
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <meta content="Premium Lifestyle, Magazine, Newsletter, Social Club, Javascript, HTML, CSS, Project" name="keywords">
+    
+    <link href="style.css" rel="stylesheet">
+    
+    <!--    Roboto font-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    
+    <!--    Hamburger icon-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet">
+    
+    <!--Social media icons-->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--Responsive navigation bar with hamburger menu. Code adapted from: https://www.codingnepalweb.com/2020/04/responsive-menu-bar-in-html-css.html-->
+    <header>
+        <nav>
+            <!--Hamburger icon-->
+            <input id="check" type="checkbox">
+            <label class="checkbtn" for="check"><i class="fas fa-bars"></i></label>
+            <a href="index.html">
+            <!--Logo image in top left corner-->
+             <img alt="Premium Lifestyle Logo" class="logo" src="Images/Index/logo%20premium.svg"></a>
+             <!--navigation menu/"buttons" on left side-->
+            <ul>
+                <li>
+                    <a class="active-btn" href="articles.html">Articles</a>
+                </li>
+                <li>
+                    <a class="active-btn" href="about.html">About</a>
+                </li>
+                <li>
+                    <a class="active-btn" href="report.html">Report</a>
+                </li>
+                <li>
+                    <a class="subscribe" href="subscribe.html">Subscribe</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--NAVBAR END-->
+    <div class="background-image">
+        <ul class="breadcrumb">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>Join the Club</li>
+        </ul>
+        
+        <!--   SUBSCRIBE FORM START-->
+        <!--   Adapted the code from this video to create the form: https://www.youtube.com/watch?v=WY4rvU4ImgE-. Removed the most of the input forms and changed the design. The logic is the same -->
+        <div class="wrapper">
+        <!--           Text-->
+            <h2>Join the club</h2>
+            <p>Every week, we'll be sending you the freshest newsletter from London.</p><br>
+            <p>Sign up today.</p>
+        <!--            error message-->
+            <div id="error_message"></div>
+        <!--            Input-->
+            <form id="myform" name="myform" onsubmit="return validate();">
+                <div class="input_field">
+                    <label for="email">Email address:</label>
+                    <input id="email" placeholder="Email" type="text">
+                </div>
+        <!--                button-->
+                <div class="btn">
+                    <input type="submit" value="Subscribe">
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--    SUBCRIBE FORM END-->
+
+   
+      <!--    FOOTER START-->
+        <!--  Code adapted from: https://blog.eduonix.com/web-programming-tutorials/build-responsive-website-footer-using-html-css/-->
+        <footer class="footer-big">
+        <!--  left side (logo + links)-->
+            <div class="footer-left">
+                <a href="index.html">
+                 <img alt="Premium Lifestyle Logo" src="Images/Index/logo%20premium.svg"></a>
+                <p class="footer-links"><a href="about.html">About</a> | 
+                <a href="subscribe.html">Subscribe</a></p>
+                <p class="footer-company-name">Premium Lifestyle Magazine London UK</p>
+            </div>
+        <!--            contact info-->
+            <div class="footer-center">
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>18 South Kensington Street</span> SW1 4KW London</p>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="mailto:info@pl.co.uk">info@pl.co.uk</a></p>
+                </div>
+            </div>
+            <!--            social media icons-->
+            <div class="footer-right">
+                <p class="footer-company-about">The number one lifestyle magazine in the UK. Get your fashion inspiration, lifetstyle tips and homestyling advice and so much more from leading experts.</p>
+                <div class="footer-icons">
+                    <a href="https://facebook.com" title="Facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="https://twitter.com" title="Twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="https://instagram.com" title="Instagram"><i class="fa fa-instagram"></i></a>
+                    <a href="https://linkedin.com" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://youtube.com" title="Youtube"><i class="fa fa-youtube"></i></a>
+                </div>
+            </div>
+        </footer>
+        <!--    FOOTER END-->
+    <script src="script.js"></script>
+</body>
+</html>

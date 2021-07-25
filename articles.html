@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Premium Lifestyle</title>
+    <meta charset="UTF-8">
+    <meta content="This is the website for Premium Lifestyle magazine, including information and upcoming events" name="description">
+    <meta content="UOL, Computer Science, Line Evjenth" name="author">
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <meta content="Premium Lifestyle, Magazine, Newsletter, Social Club, Javascript, HTML, CSS, Project" name="keywords">
+    
+    <link href="style.css" rel="stylesheet">
+    
+    <!--    Roboto font-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    
+    <!--    Hamburger icon-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet">
+    
+    <!--Social media icons-->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--Responsive navigation bar with hamburger menu. Code adapted from: https://www.codingnepalweb.com/2020/04/responsive-menu-bar-in-html-css.html-->
+    <header>
+        <nav>
+            <!--Hamburger icon-->
+            <input id="check" type="checkbox">
+            <label class="checkbtn" for="check"><i class="fas fa-bars"></i></label>
+            <a href="index.html">
+            <!--Logo image in top left corner-->
+             <img alt="Premium Lifestyle Logo" class="logo" src="Images/Index/logo%20premium.svg"></a>
+             <!--navigation menu/"buttons" on left side-->
+            <ul>
+                <li>
+                    <a class="active-btn" href="articles.html">Articles</a>
+                </li>
+                <li>
+                    <a class="active-btn" href="about.html">About</a>
+                </li>
+                <li>
+                    <a class="active-btn" href="report.html">Report</a>
+                </li>
+                <li>
+                    <a class="subscribe" href="subscribe.html">Subscribe</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--NAVBAR END-->
+  
+    <div class="background-color">
+    
+    <!--       Breadcrumbs-->
+        <ul class="breadcrumb">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>Articles</li>
+        </ul>
+        
+        <h1 class="article-head">Articles</h1>
+        <!--    ARTICLES FILTER START-->
+        <!--   Adapted the gallery with filtering from https://www.w3schools.com/howto/howto_js_portfolio_filter.asp to fit my cards, style and categories-->
+        <!--        filter buttons-->
+        <div id="myBtnContainer">
+            <button class="btn-filter active" onclick="filterSelection('all')">Show all</button>
+            <button class="btn-filter" onclick="filterSelection('art')">Art</button> <button class="btn-filter" onclick="filterSelection('beauty')">Beauty</button>
+            <button class="btn-filter" onclick="filterSelection('fashion')">Fashion</button>
+            <button class="btn-filter" onclick="filterSelection('food')">Food</button> <button class="btn-filter" onclick="filterSelection('lifestyle')">Lifestyle</button>
+            <button class="btn-filter" onclick="filterSelection('travel')">Travel</button>
+        </div>
+        
+        <!-- Article cards -->
+        <!--Food card-->
+        <div class="row-filter">
+            <div class="column-filter food">
+                <a href="cafes.html">
+                <div class="content">
+                    <img alt="Person holding a pink cake infront of a cafe" class="img-article" src="Images/Articles/cafe.png" style="width:100%">
+                    <h3>FOOD</h3>
+                    <p>London's Most Instagrammable Cafés</p>
+                </div></a>
+            </div>
+            
+             <!--Fashion card-->
+            <div class="column-filter fashion">
+                <a href="#">
+                <div class="content">
+                    <img alt="Woman carrying shopping bags" class="img-article" src="Images/Articles/fashion.jpg" style="width: 100%">
+                    <h3>FASHION</h3>
+                    <p>The Best Fashion Boutiques in London</p>
+                </div></a>
+            </div>
+            
+             <!--Beauty card-->
+            <div class="column-filter beauty">
+                <a href="#">
+                <div class="content">
+                    <img alt="woman smiling" class="img-article" src="Images/Articles/makeup.jpg" style="width:100%">
+                    <h3>BEAUTY</h3>
+                    <p>Spring Makeup Trends</p>
+                </div></a>
+            </div>
+            
+             <!--Travel card-->
+            <div class="column-filter travel">
+                <a href="#">
+                <div class="content">
+                    <img alt="The Grand Hotel in Folkestone" class="img-article" src="Images/Articles/hotel.jpg" style="width:100%">
+                    <h3>TRAVEL</h3>
+                    <p>Luxurious British Hotels</p>
+                </div></a>
+            </div>
+            
+             <!--Lifestyle card-->
+            <div class="column-filter lifestyle">
+                <a href="#">
+                <div class="content">
+                    <img alt="Young woman staring into the camera" class="img-article" src="Images/Articles/emma.jpg" style="width:100%">
+                    <h3>LIFESTYLE</h3>
+                    <p>Emma's Secret</p>
+                </div></a>
+            </div>
+            
+             <!--Food card-->
+            <div class="column-filter food">
+                <a href="#">
+                <div class="content">
+                    <img alt="Two Mimosa cocktails" class="img-article" src="Images/Articles/mimosa.jpg" style="width:100%">
+                    <h3>FOOD</h3>
+                    <p>Mimomas at Home</p>
+                </div></a>
+            </div>
+            
+             <!--Art card-->
+            <div class="column-filter art">
+                <a href="#">
+                <div class="content">
+                    <img alt="Blue coasters with gold details" class="img-article" src="Images/Articles/coasters.png" style="width:100%">
+                    <h3>ART</h3>
+                    <p>DIY Coasters</p>
+                </div></a>
+            </div>
+            
+             <!--Travel card-->
+            <div class="column-filter travel">
+                <a href="#">
+                <div class="content">
+                    <img alt="Woman relaxing next to an indoor pool" class="img-article" src="Images/Articles/spa.jpg" style="width:100%">
+                    <h3>TRAVEL</h3>
+                    <p>Spas in Bath</p>
+                </div></a>
+            </div>
+            
+             <!--Beauty card-->
+            <div class="column-filter beauty">
+                <a href="#">
+                <div class="content">
+                    <img alt="Woman with curly hair in motion" class="img-article" src="Images/Articles/hair.png" style="width:100%">
+                    <h3>BEAUTY</h3>
+                    <p>Hollywood Curls</p>
+                </div></a>
+            </div>
+        </div>
+            <!-- END GRID -->
+        <!--ARTICLES FILTER END-->
+        
+      <!--    FOOTER START-->
+        <!--  Code adapted from: https://blog.eduonix.com/web-programming-tutorials/build-responsive-website-footer-using-html-css/-->
+        <footer class="footer-big">
+        <!--  left side (logo + links)-->
+            <div class="footer-left">
+                <a href="index.html">
+                 <img alt="Premium Lifestyle Logo" src="Images/Index/logo%20premium.svg"></a>
+                <p class="footer-links"><a href="about.html">About</a> | 
+                <a href="subscribe.html">Subscribe</a></p>
+                <p class="footer-company-name">Premium Lifestyle Magazine London UK</p>
+            </div>
+        <!--            contact info-->
+            <div class="footer-center">
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>18 South Kensington Street</span> SW1 4KW London</p>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="mailto:info@pl.co.uk">info@pl.co.uk</a></p>
+                </div>
+            </div>
+            <!--            social media icons-->
+            <div class="footer-right">
+                <p class="footer-company-about">The number one lifestyle magazine in the UK. Get your fashion inspiration, lifetstyle tips and homestyling advice and so much more from leading experts.</p>
+                <div class="footer-icons">
+                    <a href="https://facebook.com" title="Facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="https://twitter.com" title="Twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="https://instagram.com" title="Instagram"><i class="fa fa-instagram"></i></a>
+                    <a href="https://linkedin.com" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://youtube.com" title="Youtube"><i class="fa fa-youtube"></i></a>
+                </div>
+            </div>
+        </footer>
+        <!--    FOOTER END-->
+    </div>
+    <script src="script2.js">
+    </script>
+</body>
+</html>
